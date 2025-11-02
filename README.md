@@ -40,17 +40,23 @@ Maps users to organizers as customers:
 pip install -r requirements.txt
 ```
 
-2. Run migrations:
+2. (Optional) Set environment variables for production:
+```bash
+export DJANGO_SECRET_KEY='your-secret-key-here'
+export DJANGO_DEBUG='False'
+```
+
+3. Run migrations:
 ```bash
 python manage.py migrate
 ```
 
-3. Create a superuser:
+4. Create a superuser:
 ```bash
 python manage.py createsuperuser
 ```
 
-4. Run the development server:
+5. Run the development server:
 ```bash
 python manage.py runserver
 ```
